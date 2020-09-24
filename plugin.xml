@@ -69,8 +69,8 @@
         <source url="https://github.com/CocoaPods/Specs.git"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="FirebaseCrashlytics"  />
-        <pod name="FirebaseAnalytics" />
+        <pod name="Firebase/Crashlytics"  />
+        <pod name="Firebase/Analytics" />
       </pods>
     </podspec>
 
