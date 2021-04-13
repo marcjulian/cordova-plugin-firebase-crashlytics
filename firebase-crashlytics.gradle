@@ -4,8 +4,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.google.gms:google-services:4.3.3'
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.2.0'
+        classpath 'com.google.gms:google-services:4.3.5'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.5.2'
     }
 }
 
@@ -16,5 +16,7 @@ allprojects {
 }
 
 ext.postBuildExtras = {
+    // apply plugin: 'com.google.firebase.crashlytics'
+    // class must be used instead of id(string) to be able to apply plugin from non-root gradle file
     apply plugin: com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsPlugin
 }
