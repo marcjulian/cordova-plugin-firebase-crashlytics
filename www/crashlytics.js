@@ -57,8 +57,9 @@ Crashlytics.LOG = {
 }
 
 // Backward compatibility instantiation
-Crashlytics.initialise = function() {
-  return new Crashlytics();
-};
+// doesnt work with iOS
+// Crashlytics.initialise = function() {
+//   return new Crashlytics();
+// };
 
-module.exports = Crashlytics;
+module.exports = new Crashlytics();
