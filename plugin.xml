@@ -52,6 +52,7 @@
   </platform>
 
   <platform name="ios">
+    <preference name="IOS_FIREBASE_CRASHLYTICS_VERSION" default="~> 7.10.0" />
     <js-module src="www/crashlytics.js" name="FirebaseCrashlytics">
       <clobbers target="FirebaseCrashlytics"/>
     </js-module>
@@ -67,7 +68,7 @@
         <source url="https://github.com/CocoaPods/Specs.git"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="FirebaseCrashlytics" />
+        <pod name="FirebaseCrashlytics" spec="$IOS_FIREBASE_CRASHLYTICS_VERSION" />
       </pods>
     </podspec>
 
